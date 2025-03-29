@@ -39,7 +39,7 @@ const QuickLinks = () => {
               key={link.name}
               className="group flex flex-col items-center p-6 bg-white rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="text-blue-600 mb-4 transition-colors duration-300 group-hover:text-blue-700">
+              <div className="text-orange-600 mb-4 transition-colors duration-300 group-hover:text-orange-700">
                 {link.icon}
               </div>
               <h3 className="text-gray-900 text-lg md:text-xl font-semibold mb-4 text-center">

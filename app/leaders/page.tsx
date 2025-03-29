@@ -21,12 +21,6 @@ const LeadersPage = () => {
       image: "/b3.jpg",
     },
     {
-      id: 4,
-      name: "Bishop Joseph Mwaura",
-      role: "Bishop",
-      image: "/b4.jpg",
-    },
-    {
       id: 5,
       name: "Josphat Wamiti",
       role: "Maella Parish",
@@ -71,7 +65,7 @@ const LeadersPage = () => {
                 <h2 className="text-3xl font-bold text-gray-900 mb-2">
                   Bishop Joseph Mwaura
                 </h2>
-                <p className="text-xl text-blue-600 font-semibold mb-4">
+                <p className="text-xl text-orange-600 font-semibold mb-4">
                   Bishop
                 </p>
                 <p className="text-gray-600 max-w-prose">

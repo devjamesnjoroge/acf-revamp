@@ -9,7 +9,10 @@ const Footer = () => {
           {/* Church Contact Information */}
           <address className="not-italic flex flex-col items-center md:items-start text-center md:text-left space-y-3">
             <div className="flex items-center gap-2 mb-2">
-              <FaChurch className="text-2xl text-blue-500" aria-hidden="true" />
+              <FaChurch
+                className="text-2xl text-orange-500"
+                aria-hidden="true"
+              />
               <h3 className="text-xl font-bold text-white">
                 Ambassadors of Christ
               </h3>
@@ -20,7 +23,7 @@ const Footer = () => {
             </p>
             <a
               href="tel:+0703656466"
-              className="flex items-center gap-2 hover:text-blue-400 transition-colors duration-300"
+              className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-300"
               aria-label="Call us"
             >
               <FaPhone className="flex-shrink-0" aria-hidden="true" />
@@ -28,7 +31,7 @@ const Footer = () => {
             </a>
             <a
               href="mailto:info@ambassadorsofchristfellowship.com"
-              className="flex items-center gap-2 hover:text-blue-400 transition-colors duration-300"
+              className="flex items-center gap-2 hover:text-orange-400 transition-colors duration-300"
               aria-label="Email us"
             >
               <FaEnvelope className="flex-shrink-0" aria-hidden="true" />
@@ -50,7 +53,7 @@ const Footer = () => {
                   <li key={title}>
                     <Link
                       href={href}
-                      className="hover:text-blue-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                      className="hover:text-orange-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
                     >
                       {title}
                     </Link>

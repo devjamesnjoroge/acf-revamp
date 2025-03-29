@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="uppercase hover:text-blue-600 transition-colors"
+              className="uppercase hover:text-orange-600 transition-colors"
             >
               {link.name}
             </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="block py-2 uppercase hover:text-blue-600 transition-colors"
+              className="block py-2 uppercase hover:text-orange-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}

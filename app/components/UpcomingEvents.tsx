@@ -38,7 +38,7 @@ const UpcomingEvents = () => {
               className="group bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <div className="flex items-center gap-3 mb-4">
-                <FaCalendarAlt className="text-blue-600 text-2xl transition-colors duration-300 group-hover:text-blue-700" />
+                <FaCalendarAlt className="text-orange-600 text-2xl transition-colors duration-300 group-hover:text-orange-700" />
                 <h3 className="text-xl font-semibold text-gray-900">
                   {event.title}
                 </h3>
@@ -53,7 +53,7 @@ const UpcomingEvents = () => {
 
               <Link
                 href={event.href}
-                className="inline-flex items-center gap-2 w-full px-4 py-2 text-sm font-medium text-gray-900 hover:text-blue-600 transition-colors duration-300"
+                className="inline-flex items-center gap-2 w-full px-4 py-2 text-sm font-medium text-gray-900 hover:text-orange-600 transition-colors duration-300"
                 aria-label={`View details for ${event.title}`}
               >
                 <span>View Details</span>
