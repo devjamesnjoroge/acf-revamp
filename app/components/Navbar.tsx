@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "About", href: "/" },
+    { name: "Leaders", href: "/leaders" },
     { name: "Explore", href: "/" },
     { name: "Teachings", href: "/" },
     { name: "Media", href: "/" },
