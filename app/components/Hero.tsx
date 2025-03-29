@@ -16,7 +16,7 @@ const Hero = () => {
             Ambassadors of Christ Fellowship Church
           </h1>
           <Link href="/">
-            <button className="mt-6 px-5 py-2 bg-white text-[#000000] rounded-lg text-lg font-medium hover:bg-emerald-600 transition-colors duration-300">
+            <button className="mt-6 px-5 py-2 bg-white text-[#000000] rounded-lg text-lg font-medium hover:bg-orange-600 hover:text-white transition-colors duration-300">
               Connect
             </button>
           </Link>
