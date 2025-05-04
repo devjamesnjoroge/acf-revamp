@@ -9,13 +9,13 @@ const UpcomingEvents = () => {
       title: "Youth Kesha Night",
       date: "[TBD - Please provide the date]",
       time: "7:00 PM - 6:00 AM",
-      href: "/youth-kesha",
+      href: "/events/youth-kesha",
     },
     {
       title: "Sunday Service",
       date: "Every Sunday",
       time: "10:00 AM - 12:00 PM",
-      href: "/sunday-service",
+      href: "/events/sunday-service",
     },
     {
       title: "Community Outreach",

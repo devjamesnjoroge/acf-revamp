@@ -20,7 +20,7 @@ const Navbar = () => {
       {/* Navbar Container */}
       <div className="flex px-4 sm:px-8 lg:px-16 py-4 lg:py-8 items-center justify-between">
         {/* Logo Section */}
-        <div className="logo flex items-center justify-center gap-3">
+        <Link href="/" className="logo flex items-center justify-center gap-3">
           <Image
             src={"/logo.jpeg"}
             height={58}
@@ -33,7 +33,7 @@ const Navbar = () => {
             <br />
             <span className="font-normal text-[0.8rem]">Christ Fellowship</span>
           </span>
-        </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center items-center gap-8 lg:gap-16">
