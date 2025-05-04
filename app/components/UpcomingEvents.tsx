@@ -18,10 +18,10 @@ const UpcomingEvents = () => {
       href: "/events/sunday-service",
     },
     {
-      title: "Community Outreach",
+      title: "Annual Convention",
       date: "[TBD - Please provide the date]",
       time: "9:00 AM",
-      href: "/events",
+      href: "/events/annual-convention",
     },
   ];
 
