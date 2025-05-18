@@ -26,50 +26,44 @@ const UpcomingEvents = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-12 lg:py-16 relative overflow-hidden">
-      <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-gray-900 tracking-tight font-serif">
-          Upcoming Events
+    <section className="relative overflow-hidden py-16 bg-gradient-to-br from-orange-50 via-white to-orange-100">
+      <div className="container mx-auto px-6 sm:px-10 lg:px-16">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-14 text-gray-800 tracking-tight font-serif">
+          📅 Upcoming Events
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
           {events.map((event) => (
             <article
               key={event.title}
-              className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50"
+              className="group relative overflow-hidden backdrop-blur-lg border border-orange-200/40 bg-white/70 rounded-3xl p-8 shadow-xl transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02]"
             >
-              <div className="flex flex-col items-center space-y-6">
-                <div className="flex flex-col items-center">
-                  <div className="bg-orange-50 p-3 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                    <FaCalendarAlt className="text-orange-400 text-2xl group-hover:text-orange-500 transition-colors duration-300" />
-                  </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
-                    {event.title}
-                  </h3>
+              <div className="flex flex-col items-center text-center space-y-6">
+                <div className="bg-white/40 p-4 rounded-full shadow-sm transition-colors duration-300 group-hover:bg-orange-100">
+                  <FaCalendarAlt className="text-orange-500 text-3xl" />
                 </div>
 
-                <div className="flex flex-col items-center text-gray-600">
-                  <div className="bg-orange-50 p-3 rounded-full mb-2 group-hover:bg-gray-100 transition-colors duration-300">
-                    <FaClock className="text-orange-400 text-2xl group-hover:text-orange-500 transition-colors duration-300" />
+                <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight">
+                  {event.title}
+                </h3>
+
+                <div className="flex flex-col items-center text-gray-700 space-y-2">
+                  <div className="bg-white/40 p-3 rounded-full shadow-sm transition-colors duration-300 group-hover:bg-orange-100">
+                    <FaClock className="text-orange-500 text-xl" />
                   </div>
-                  <time className="text-lg font-sans text-center">
+                  <time className="text-base md:text-lg font-medium">
                     {event.date} • {event.time}
                   </time>
                 </div>
 
                 <Link
                   href={event.href}
-                  className="w-full"
                   aria-label={`View details for ${event.title}`}
                 >
-                  <h2
-                    className="w-full px-4 py-2 bg-orange-400 text-white rounded-full hover:bg-orange-500 transition-all duration-300 text-lg font-medium font-sans shadow-lg hover:shadow-xl group hover:animate-none text-center"
-                    aria-label={`Navigate to ${event.title} details`}
-                  >
-                    <span className="inline-flex items-center gap-2">
-                      View Details
-                      <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-1" />
-                    </span>
-                  </h2>
+                  <button className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-orange-500 text-white font-semibold text-base hover:bg-orange-600 transition-all duration-300 shadow-md hover:shadow-lg group">
+                    View Details
+                    <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                  </button>
                 </Link>
               </div>
             </article>
@@ -77,14 +71,14 @@ const UpcomingEvents = () => {
         </div>
       </div>
 
-      {/* Subtle Background Texture */}
+      {/* ✨ Subtle Decorative Background Texture */}
       <div
-        className="absolute inset-0 pointer-events-none opacity-3"
+        className="absolute inset-0 opacity-5 pointer-events-none"
         style={{
           background:
-            'url(\'data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="10" cy="10" r="1" fill="%23FED7AA"/%3E%3C/svg%3E\') repeat',
+            "url(\"data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10' cy='10' r='1' fill='%23FDBA74'/%3E%3C/svg%3E\") repeat",
         }}
-      ></div>
+      />
     </section>
   );
 };

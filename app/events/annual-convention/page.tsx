@@ -12,140 +12,121 @@ import Link from "next/link";
 
 const AnnualConvention = () => {
   return (
-    <section className="bg-gradient-to-b from-gray-50 to-white py-12 lg:py-16 relative overflow-hidden">
+    <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white py-12 lg:py-16">
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight font-serif">
+        {/* Header — The trumpet call */}
+        <header className="text-center mb-12">
+          <h1 className="font-serif text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
             Welcome to ACF Annual Convention
           </h1>
-          <div className="w-24 h-1 bg-orange-400 mx-auto mt-3 rounded-full"></div>
-        </div>
+          <div className="mx-auto mt-3 h-1 w-24 rounded-full bg-orange-400"></div>
+        </header>
 
-        {/* Introduction */}
-        <p className="text-center text-gray-700 text-lg mb-12 max-w-3xl mx-auto font-sans leading-relaxed">
-          Join us for a transformative time of worship, fellowship, and
-          spiritual renewal at the 2025 ACF Annual Convention! This cherished
-          gathering brings our church family and community together to celebrate
-          God’s faithfulness, deepen our faith, and inspire one another to live
-          out His calling with purpose. Whether you’re a longtime member or a
-          first-time visitor, we welcome you to experience powerful worship,
-          anointed preaching, and meaningful connections.
+        {/* Introduction — The warm embrace */}
+        <p className="mx-auto mb-12 max-w-3xl text-center font-sans text-lg leading-relaxed text-gray-700">
+          Join us for a soul-stirring journey of worship, fellowship, and
+          renewal at the 2025 ACF Annual Convention! This cherished gathering
+          unites hearts in celebration of God’s faithfulness, deepens our
+          spiritual roots, and ignites a collective passion to live out His
+          purpose. Whether a familiar face or new in the flock, prepare to be
+          moved by stirring worship, powerful preaching, and vibrant community.
         </p>
 
-        {/* Event Details */}
-        <div className="mb-20 max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-10 font-serif">
+        {/* Event Details — The crystal clear beacon */}
+        <section className="mb-20 max-w-2xl mx-auto text-center">
+          <h2 className="mb-10 font-serif text-3xl font-bold text-gray-900">
             Event Details
           </h2>
-          <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50 text-center">
-            <div className="flex flex-col items-center mb-6">
-              <div className="bg-orange-50 p-4 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                <FaCalendarAlt className="text-orange-400 text-3xl group-hover:text-orange-500 group-hover:scale-110 transition-all duration-300" />
+          <article className="group relative rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-orange-50 p-10 shadow-md transition duration-300 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] hover:border-orange-400">
+            <div className="mb-6 flex flex-col items-center">
+              <div className="mb-4 rounded-full bg-orange-50 p-4 transition-colors duration-300 group-hover:bg-gray-100">
+                <FaCalendarAlt className="text-orange-400 transition-transform duration-300 group-hover:scale-110 group-hover:text-orange-500 text-3xl" />
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
+              <h3 className="font-serif text-center text-2xl font-semibold text-gray-900 tracking-tight">
                 2025 ACF Annual Convention
               </h3>
             </div>
-            <p className="text-gray-800 text-lg leading-relaxed font-sans mb-2">
-              <span className="font-semibold">Date:</span> [TBD - Please provide
-              the date]
+            <p className="mb-2 font-sans text-lg leading-relaxed text-gray-800">
+              <strong>Date:</strong> [TBD - Please provide the date]
             </p>
-            <p className="text-gray-800 text-lg leading-relaxed font-sans mb-2">
-              <span className="font-semibold">Location:</span> Nyamathi Ground
+            <p className="font-sans text-lg leading-relaxed text-gray-800">
+              <strong>Location:</strong> Nyamathi Ground
             </p>
-          </div>
-        </div>
+          </article>
+        </section>
 
-        {/* Divider */}
-        <div className="w-32 h-1 bg-orange-400 mx-auto mb-12 rounded-full"></div>
+        {/* Divider — The pause before the feast */}
+        <div className="mx-auto mb-12 h-1 w-32 rounded-full bg-orange-400"></div>
 
-        {/* What to Expect */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-bold text-gray-900 text-center mb-10 font-serif">
+        {/* What to Expect — The treasure map */}
+        <section className="mb-20">
+          <h2 className="mb-10 text-center font-serif text-3xl font-bold text-gray-900">
             What to Expect
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50">
-              <div className="flex flex-col items-center mb-6">
-                <div className="bg-orange-50 p-4 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                  <FaBible className="text-orange-400 text-3xl group-hover:text-orange-500 group-hover:scale-110 transition-all duration-300" />
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            {[
+              {
+                icon: FaBible,
+                title: "Inspiring Messages",
+                desc: "Hear dynamic speakers weaving biblical insights with practical wisdom to ignite your spiritual journey.",
+              },
+              {
+                icon: FaMusic,
+                title: "Powerful Worship",
+                desc: "Lift your voice alongside our worship team and guest artists, exaltation in perfect harmony.",
+              },
+              {
+                icon: FaUsers,
+                title: "Breakout Sessions",
+                desc: "Dive deep into workshops on prayer, leadership, family, and outreach—crafted for every stage of faith.",
+              },
+              {
+                icon: FaChild,
+                title: "Youth & Children’s Programs",
+                desc: "Engaging, faith-growing activities tailored for kids and teens to nurture the next generation.",
+              },
+            ].map(({ icon: Icon, title, desc }) => (
+              <article
+                key={title}
+                className="group rounded-2xl border border-gray-100 bg-gradient-to-br from-white to-orange-50 p-10 shadow-md transition duration-300 hover:-translate-y-2 hover:scale-[1.02] hover:border-orange-400 hover:shadow-2xl"
+              >
+                <div className="mb-6 flex flex-col items-center">
+                  <div className="mb-4 rounded-full bg-orange-50 p-4 transition-colors duration-300 group-hover:bg-gray-100">
+                    <Icon className="text-orange-400 text-3xl transition-transform duration-300 group-hover:scale-110 group-hover:text-orange-500" />
+                  </div>
+                  <h3 className="font-serif text-center text-2xl font-semibold text-gray-900 tracking-tight">
+                    {title}
+                  </h3>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
-                  Inspiring Messages
-                </h3>
-              </div>
-              <p className="text-gray-800 text-lg leading-relaxed font-sans text-center">
-                Hear from dynamic speakers who will share biblical insights and
-                practical wisdom to strengthen your walk with Christ.
-              </p>
-            </div>
-            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50">
-              <div className="flex flex-col items-center mb-6">
-                <div className="bg-orange-50 p-4 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                  <FaMusic className="text-orange-400 text-3xl group-hover:text-orange-500 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
-                  Powerful Worship
-                </h3>
-              </div>
-              <p className="text-gray-800 text-lg leading-relaxed font-sans text-center">
-                Lift your voice with our worship team and guest artists as we
-                exalt God together.
-              </p>
-            </div>
-            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50">
-              <div className="flex flex-col items-center mb-6">
-                <div className="bg-orange-50 p-4 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                  <FaUsers className="text-orange-400 text-3xl group-hover:text-orange-500 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
-                  Breakout Sessions
-                </h3>
-              </div>
-              <p className="text-gray-800 text-lg leading-relaxed font-sans text-center">
-                Choose from workshops on topics like prayer, family, leadership,
-                and outreach, tailored for all ages and stages of faith.
-              </p>
-            </div>
-            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:scale-102 hover:border-orange-400 bg-gradient-to-br from-white to-orange-50">
-              <div className="flex flex-col items-center mb-6">
-                <div className="bg-orange-50 p-4 rounded-full mb-4 group-hover:bg-gray-100 transition-colors duration-300">
-                  <FaChild className="text-orange-400 text-3xl group-hover:text-orange-500 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <h3 className="text-2xl font-semibold text-gray-900 font-serif tracking-tight text-center">
-                  Youth and Children’s Programs
-                </h3>
-              </div>
-              <p className="text-gray-800 text-lg leading-relaxed font-sans text-center">
-                Engaging activities and teaching for kids and teens to grow in
-                faith.
-              </p>
-            </div>
+                <p className="font-sans text-center text-lg leading-relaxed text-gray-800">
+                  {desc}
+                </p>
+              </article>
+            ))}
           </div>
-        </div>
+        </section>
 
-        {/* Call to Action */}
+        {/* Call to Action — The trumpet’s final call */}
         <div className="text-center">
-          <div className="w-16 h-1 bg-orange-400 mx-auto mb-6 rounded-full"></div>
+          <div className="mx-auto mb-6 h-1 w-16 rounded-full bg-orange-400"></div>
           <Link
             href="/annual-convention"
-            className="inline-flex items-center gap-3 px-10 py-5 text-lg font-medium text-white bg-orange-400 rounded-full hover:bg-orange-500 transition-all duration-300 shadow-lg hover:shadow-xl group animate-pulse hover:animate-none"
             aria-label="Join the ACF Annual Convention"
+            className="group inline-flex items-center gap-3 rounded-full bg-orange-400 px-10 py-5 text-lg font-medium text-white shadow-lg transition duration-300 hover:bg-orange-500 hover:shadow-xl animate-pulse hover:animate-none"
           >
             <span>Join Us</span>
             <FaArrowRight className="transform transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
         </div>
 
-        {/* Subtle Background Texture */}
+        {/* Subtle Background Texture — the whisper of grace */}
         <div
           className="absolute inset-0 pointer-events-none opacity-3"
           style={{
             background:
               'url(\'data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="10" cy="10" r="1" fill="%23FED7AA"/%3E%3C/svg%3E\') repeat',
           }}
-        ></div>
+        />
       </div>
     </section>
   );

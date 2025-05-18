@@ -10,72 +10,71 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Leaders", href: "/leaders" },
-    { name: "Explore", href: "/" },
+    { name: "Youth", href: "/youth-hub" },
     { name: "Teachings", href: "/" },
     { name: "Media", href: "/" },
   ];
 
   return (
-    <div className="bg-white">
-      {/* Navbar Container */}
-      <div className="flex px-4 sm:px-8 lg:px-16 py-4 lg:py-8 items-center justify-between">
-        {/* Logo Section */}
-        <Link href="/" className="logo flex items-center justify-center gap-3">
+    <header className="relative z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+      <div className="container mx-auto px-6 sm:px-8 lg:px-12 py-4 flex items-center justify-between">
+        {/* Logo */}
+        <Link
+          href="/"
+          className="flex items-center gap-3 transition-transform hover:scale-[1.03]"
+        >
           <Image
-            src={"/logo.jpeg"}
-            height={58}
-            width={60}
-            alt=""
-            className="rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300"
+            src="/logo.jpeg"
+            alt="Church logo"
+            width={52}
+            height={52}
+            className="rounded-full shadow-md"
           />
-          <span className="uppercase">
-            <span className="font-bold">Ambassadors Of</span>
-            <br />
-            <span className="font-normal text-[0.8rem]">Christ Fellowship</span>
-          </span>
+          <div className="text-gray-900 leading-tight">
+            <p className="uppercase font-bold text-sm">Ambassadors Of</p>
+            <p className="uppercase text-xs tracking-wide">Christ Fellowship</p>
+          </div>
         </Link>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex justify-center items-center gap-8 lg:gap-16">
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8 lg:gap-12">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="uppercase hover:text-orange-600 transition-colors"
+              className="uppercase text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors duration-300"
             >
               {link.name}
             </Link>
           ))}
-        </div>
+        </nav>
 
-        {/* Mobile Menu Icon */}
-        <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? (
-              <FiX className="text-2xl" />
-            ) : (
-              <FiMenu className="text-2xl" />
-            )}
-          </button>
-        </div>
+        {/* Mobile Toggle */}
+        <button
+          className="md:hidden text-gray-700"
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
+        </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-50 px-4 py-2">
+        <div className="md:hidden bg-white border-t border-orange-100 shadow-sm px-6 py-4 space-y-3 transition-all duration-300">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
-              className="block py-2 uppercase hover:text-orange-600 transition-colors"
               onClick={() => setIsMenuOpen(false)}
+              className="block uppercase text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors"
             >
               {link.name}
             </Link>
           ))}
         </div>
       )}
-    </div>
+    </header>
   );
 };
 
