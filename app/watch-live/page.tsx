@@ -29,9 +29,9 @@ const WatchLive = () => {
             teaches deeply, and welcomes wholly.
           </p>
           <p>
-            We know life can be busy, but worship shouldn't be a luxury. That's
-            why we bring you spirit-filled, soul-renewing services straight to
-            your screen — real-time, anytime.
+            We know life can be busy, but worship shouldn&apos;t be a luxury.
+            That&apos;s why we bring you spirit-filled, soul-renewing services
+            straight to your screen — real-time, anytime.
           </p>
         </div>
 

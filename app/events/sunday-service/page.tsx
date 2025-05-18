@@ -24,7 +24,7 @@ const SundayService = () => {
           </div>
           <p className="mt-8 text-lg md:text-xl text-gray-700 font-light leading-relaxed max-w-xl mx-auto">
             Join us every Sunday to worship, pray, and grow in faith , a warm
-            community waiting for you, whether you're a lifelong believer or a
+            community waiting for you, whether you&apos;re a lifelong believer or a
             curious visitor.
           </p>
         </header>

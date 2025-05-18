@@ -35,7 +35,7 @@ const QuickLinks = () => {
             Get Connected
           </h2>
           <p className="mt-4 text-lg leading-8 text-gray-700">
-            Discover ways to engage, grow, and give back. Whether you're new or a regular, there's always a next step.
+            Discover ways to engage, grow, and give back. Whether you&apos;re new or a regular, there&apos;s always a next step.
           </p>
         </div>
 
