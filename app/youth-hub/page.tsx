@@ -72,7 +72,7 @@ const YouthHub = () => {
         {/* Youth Leaders Section */}
         <div className="max-w-4xl mx-auto text-center mb-14">
           <h2 className="text-4xl font-extrabold text-gray-900 tracking-tight font-serif mb-8">
-            Our Youth Leaders — Cool, Committed, and In Charge
+            Our Youth Leaders , Cool, Committed, and In Charge
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
             {youthLeaders.map(({ id, name, role, image }) => (
@@ -111,7 +111,7 @@ const YouthHub = () => {
 
         {/* Introduction */}
         <p className="max-w-3xl mx-auto text-center text-gray-600 text-lg leading-relaxed font-sans mb-16">
-          At ACFC, we believe young people are not just the church of tomorrow —
+          At ACFC, we believe young people are not just the church of tomorrow ,
           they are the church of today. The Youth Hub is a vibrant ministry
           offering a safe, spirit-filled space to explore faith, build
           friendships, discover purpose, and rise as Kingdom influencers.
@@ -181,7 +181,7 @@ const YouthHub = () => {
           <div className="mb-6 w-16 h-1 rounded-full bg-gradient-to-r from-orange-400 to-orange-600 mx-auto"></div>
           <p className="text-gray-700 text-xl font-serif mb-10 leading-relaxed">
             Whether you&apos;re in high school, at tertiary level, just starting
-            your career, or figuring out your path — the Youth Hub is a place
+            your career, or figuring out your path , the Youth Hub is a place
             where you belong, your voice matters, and your future is shaped by
             God&apos;s purpose. We&apos;re building a generation that will rise
             in love, truth, and power.

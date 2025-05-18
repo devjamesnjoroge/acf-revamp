@@ -23,7 +23,7 @@ const SundayService = () => {
             <div className="w-6 h-1 rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 animate-pulse delay-200"></div>
           </div>
           <p className="mt-8 text-lg md:text-xl text-gray-700 font-light leading-relaxed max-w-xl mx-auto">
-            Join us every Sunday to worship, pray, and grow in faith — a warm
+            Join us every Sunday to worship, pray, and grow in faith , a warm
             community waiting for you, whether you're a lifelong believer or a
             curious visitor.
           </p>
@@ -70,7 +70,7 @@ const SundayService = () => {
               {
                 icon: <FaMusic className="text-orange-500 text-4xl" />,
                 title: "Worship",
-                desc: "Uplifting music from our praise team — contemporary beats meet timeless hymns.",
+                desc: "Uplifting music from our praise team , contemporary beats meet timeless hymns.",
               },
               {
                 icon: <FaBible className="text-orange-500 text-4xl" />,
@@ -114,7 +114,7 @@ const SundayService = () => {
             First Time Visiting?
           </h2>
           <p className="text-lg font-light text-gray-800 mb-4 max-w-xl mx-auto">
-            We’re thrilled you’re thinking of joining us! Come as you are —
+            We’re thrilled you’re thinking of joining us! Come as you are ,
             casual, dressed up, or somewhere in between.
           </p>
         </section>
