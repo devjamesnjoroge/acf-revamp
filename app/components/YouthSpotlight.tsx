@@ -12,7 +12,8 @@ const YouthSpotlight = () => {
     >
       <div className="container mx-auto px-6 sm:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-16">
-          <div className="md:w-1/2 relative group aspect-[4/3]">
+          {/* Added min-h-[200px] and aspect-[4/3] for all screens to ensure height */}
+          <div className="md:w-1/2 relative group aspect-[4/3] min-h-[200px]">
             <div className="overflow-hidden rounded-2xl shadow-md group-hover:shadow-xl transition-all duration-300 group-hover:border-orange-400 border border-gray-100 bg-gradient-to-br from-white to-orange-50">
               <Image
                 src="/youth-group.jpeg"
