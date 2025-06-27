@@ -18,6 +18,13 @@ const youthLeaders = [
   { id: 2, name: "Flora Njeri", role: "Chairlady", image: "/y2.jpg" },
   { id: 3, name: "Mary Wangari", role: "Treasurer", image: "/y3.jpg" },
   { id: 4, name: "Simon Kamau", role: "Chairman", image: "/y4.jpg" },
+  {
+    id: 5,
+    name: "Richard Ndegwa",
+    role: "Organizing Secretary",
+    image: "/y5.jpg",
+  },
+  { id: 6, name: "John Ng'ang'a", role: "Vice Secretary", image: "/y6.jpg" },
 ];
 
 const pillars = [
@@ -64,6 +71,17 @@ const programs = [
     description: "To schools, communities, and vulnerable groups.",
   },
 ];
+
+// Adjust images appearance full visibility irregardless of size.
+const imageStyles = {
+  objectFit: "cover",
+  width: "100%",
+  height: "100%",
+};
+
+// Main Youth Hub component
+// This component serves as the main page for the Youth Hub section of the website.
+// It showcases youth leaders, foundational pillars, core programs, and a call to action for joining
 
 const YouthHub = () => {
   return (
