@@ -14,10 +14,10 @@ import {
 import Link from "next/link";
 
 const youthLeaders = [
-  { id: 1, name: "Lilian Wanjiru", role: "Vice Secretary", image: "/y1.jpg" },
-  { id: 2, name: "Flora Njeri", role: "Chairlady", image: "/y2.jpg" },
-  { id: 3, name: "Mary Wangari", role: "Treasurer", image: "/y3.jpg" },
-  { id: 4, name: "Simon Kamau", role: "Chairman", image: "/y4.jpg" },
+  { id: 1, name: "Lilian Wanjiru", role: "Vice Secretary", image: "/y2.jpg" },
+  { id: 2, name: "Flora Njeri", role: "Chairlady", image: "/y3.jpg" },
+  { id: 3, name: "Mary Wangari", role: "Treasurer", image: "/y4.jpg" },
+  { id: 4, name: "Simon Kamau", role: "Chairman", image: "/y1.jpg" },
   {
     id: 5,
     name: "Richard Ndegwa",
@@ -71,10 +71,6 @@ const programs = [
     description: "To schools, communities, and vulnerable groups.",
   },
 ];
-
-// Main Youth Hub component
-// This component serves as the main page for the Youth Hub section of the website.
-// It showcases youth leaders, foundational pillars, core programs, and a call to action for joining
 
 const YouthHub = () => {
   return (
