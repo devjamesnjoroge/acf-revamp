@@ -72,13 +72,6 @@ const programs = [
   },
 ];
 
-// Adjust images appearance full visibility irregardless of size.
-const imageStyles = {
-  objectFit: "cover",
-  width: "100%",
-  height: "100%",
-};
-
 // Main Youth Hub component
 // This component serves as the main page for the Youth Hub section of the website.
 // It showcases youth leaders, foundational pillars, core programs, and a call to action for joining
